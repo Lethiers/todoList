@@ -71,12 +71,3 @@ function supp(texte) {
     let strListe = JSON.stringify(liste);
     localStorage.setItem('sauvegarde', strListe); 
 }
-
-/*----------empecher le reset de la page ---------- */
-
-const monForm = document.querySelector("form");
-
-monForm.addEventListener('submit', (e)=>{
-    e.preventDefault();
-    console.log("OK");
-})
